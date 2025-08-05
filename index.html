@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAHIMTECH - Boutique en ligne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Message de bienvenue -->
+    <div class="welcome-banner" id="welcomeBanner">
+        <p>Welcome to YAHIMTECH</p>
+        <span class="close-btn" onclick="closeWelcome()">&times;</span>
+    </div>
+
+    <!-- En-tête -->
+    <header>
+        <div class="logo-container">
+            <h1>YAHIMTECH</h1>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Contacts <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <p><i class="fas fa-phone"></i> 509 37976277</p>
+                        <p><i class="fas fa-envelope"></i> yahimjamess@gmail.com</p>
+                        <p><i class="fab fa-instagram"></i> yahimjames</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Les Cayes, Sud</p>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Paiements <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <p><i class="fas fa-money-bill-wave"></i> Mon cash</p>
+                        <p><i class="fas fa-credit-card"></i> Natcash</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bannière principale -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Technologie de qualité à portée de main</h2>
+            <p>Découvrez nos derniers produits aux meilleurs prix</p>
+            <a href="#products" class="btn">Voir les produits</a>
+        </div>
+    </section>
+
+    <!-- Section produits -->
+    <section class="products-section" id="products">
+        <h2>Nos Produits</h2>
+        <div class="products-container">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Smartphone" alt="Smartphone">
+                <h3>Smartphone Premium</h3>
+                <p class="price">$599.99</p>
+                <p class="description">Smartphone haut de gamme avec écran AMOLED et triple caméra.</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+            
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Laptop" alt="Laptop">
+                <h3>Laptop Ultrabook</h3>
+                <p class="price">$899.99</p>
+                <p class="description">Ordinateur portable léger et puissant pour le travail et les jeux.</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+            
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Smartwatch" alt="Smartwatch">
+                <h3>Montre Connectée</h3>
+                <p class="price">$199.99</p>
+                <p class="description">Suivez votre activité physique et recevez des notifications.</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+            
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Headphones" alt="Écouteurs">
+                <h3>Écouteurs Sans Fil</h3>
+                <p class="price">$149.99</p>
+                <p class="description">Son haute qualité avec réduction de bruit active.</p>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about-section" id="about">
+        <h2>À propos de YAHIMTECH</h2>
+        <div class="about-content">
+            <p>YAHIMTECH est une entreprise spécialisée dans la vente de produits technologiques de haute qualité à des prix compétitifs.</p>
+            <p>Nous nous engageons à fournir à nos clients les dernières innovations technologiques avec un service client exceptionnel.</p>
+            <p>Basée aux Cayes, notre équipe est passionnée par la technologie et s'efforce de rendre les produits high-tech accessibles à tous.</p>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>YAHIMTECH</h3>
+                <p>Votre destination pour les produits technologiques de qualité.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacts</h3>
+                <p><i class="fas fa-phone"></i> 509 37976277</p>
+                <p><i class="fas fa-envelope"></i> yahimjamess@gmail.com</p>
+                <p><i class="fab fa-instagram"></i> yahimjames</p>
+                <p><i class="fas fa-map-marker-alt"></i> Les Cayes, Sud</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Modes de paiement</h3>
+                <p><i class="fas fa-money-bill-wave"></i> Mon cash</p>
+                <p><i class="fas fa-credit-card"></i> Natcash</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 YAHIMTECH. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
